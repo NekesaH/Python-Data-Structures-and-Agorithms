@@ -72,8 +72,10 @@ def sortList(self, head):
 #     array[i], array[j] = array[j], array[i]
 
 
-        
-
+#maximum product difference solution
+def maxProduct(nums):
+    nums.sort()
+    return nums[-1] * nums[-2] - nums[0] * nums[1]
 
 
 
